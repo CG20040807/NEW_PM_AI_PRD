@@ -9,9 +9,11 @@ document.getElementById("product-form").addEventListener("submit", async functio
 
     document.getElementById("result").innerHTML = `
         <h3>生成的报告：</h3>
-        <pre>${result}</pre>
-        <a href="data:application/msword;charset=utf-8,${encodeURIComponent(result)}" download="product_report.docx">
-            下载报告
-        </a>
+        <div class="card p-3">
+            <pre>${result}</pre>
+            <a href="data:application/msword;charset=utf-8,${encodeURIComponent(result)}" download="product_report.docx" class="download-btn">
+                下载报告
+            </a>
+        </div>
     `;
 });
