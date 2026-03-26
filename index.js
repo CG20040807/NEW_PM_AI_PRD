@@ -9,10 +9,10 @@ document.getElementById("product-form").addEventListener("submit", async functio
 
     document.getElementById("result").innerHTML = `
         <h3>生成的报告：</h3>
-        <div class="card p-3">
-            <pre>${result}</pre>
+        <div class="card p-3" style="background: rgba(255, 255, 255, 0.3); border-radius: 8px;">
+            <pre style="font-size: 1rem; color: #333;">${result}</pre>
             <a href="data:application/msword;charset=utf-8,${encodeURIComponent(result)}" download="product_report.docx" class="download-btn">
-                下载报告
+                下载报告 <i class="fas fa-download"></i>
             </a>
         </div>
     `;
