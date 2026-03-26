@@ -8,7 +8,7 @@
     <!-- Google Fonts for elegance and readability -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS for layout -->
+    <!-- Bootstrap CSS for clean layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome for icons -->
@@ -20,7 +20,7 @@
     <!-- SweetAlert2 for pop-up modals -->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.min.css" rel="stylesheet">
 
-    <!-- Custom CSS for elegance and simplicity -->
+    <!-- Custom CSS for elegance -->
     <style>
         body {
             background-color: #f0f0f5;
@@ -31,8 +31,8 @@
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            font-weight: bold;
+            font-size: 3.5rem;
+            font-weight: 700;
             text-align: center;
             color: #333;
             margin-bottom: 50px;
@@ -44,7 +44,7 @@
             border-radius: 12px;
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             max-width: 700px;
-            margin: auto;
+            margin: 0 auto;
         }
 
         .form-label {
@@ -116,7 +116,8 @@
         <form id="product-form">
             <div class="mb-3 form-group">
                 <label for="product-name" class="form-label">产品名称</label>
-                <input type="text" class="form-control" id="product-name" placeholder="输入产品名称" required>
+                <!-- Add 'id' and 'name' attributes to the input field -->
+                <input type="text" class="form-control" id="product-name" name="product-name" placeholder="输入产品名称" required>
             </div>
             <button type="submit" class="btn" data-aos="fade-up" data-aos-delay="400">生成报告</button>
         </form>
